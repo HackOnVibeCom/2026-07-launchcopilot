@@ -20,7 +20,7 @@
     "lighthouse": "lhci autorun",
     "release": "semantic-release",
     "release:dry": "semantic-release --dry-run --no-ci",
-    "build:next": "next build"
+    "build": "next build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.111.0",
