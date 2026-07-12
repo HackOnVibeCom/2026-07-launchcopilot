@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
@@ -20,7 +19,8 @@
     "e2e:ui": "playwright test --ui",
     "lighthouse": "lhci autorun",
     "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run --no-ci"
+    "release:dry": "semantic-release --dry-run --no-ci",
+    "build:next": "next build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.111.0",

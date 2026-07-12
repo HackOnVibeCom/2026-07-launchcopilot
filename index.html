@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaunchCopilot — paste your store link, get a graded, validated launch kit</title>
+<meta name="description" content="LaunchCopilot grades your App Store / Google Play listing against 28 deterministic ASO rules, then generates a launch kit the same engine re-grades until it scores ≥90.">
+<style>
+  :root{--bg:#0a0418;--card:#140a2a;--line:rgba(255,255,255,.10);--cyan:#00d4ff;--pink:#ff2d95;--violet:#8b5cff;--ink:#f4f0ff;--mut:#b3a7d6}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Helvetica Neue",Inter,system-ui,sans-serif;background:
+      radial-gradient(1200px 600px at 15% -10%,rgba(139,92,255,.25),transparent 60%),
+      radial-gradient(1000px 500px at 100% 0%,rgba(0,212,255,.14),transparent 55%),var(--bg);
+    color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:40px 22px 70px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.15rem;letter-spacing:.2px}
+  .brand .dot{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--cyan),var(--pink));display:grid;place-items:center;font-size:1.1rem}
+  .grad{background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.05;margin:26px 0 14px;letter-spacing:-.5px}
+  .lede{font-size:1.12rem;color:var(--mut);max-width:44ch}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 8px}
+  a.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;border-radius:12px;font-weight:800;text-decoration:none;font-size:.98rem;transition:transform .15s,box-shadow .15s,filter .15s}
+  a.btn:hover{transform:translateY(-2px)}
+  a.primary{background:linear-gradient(90deg,var(--cyan),var(--pink));color:#0a0418;box-shadow:0 12px 30px -12px var(--cyan)}
+  a.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--line)}
+  .note{font-size:.85rem;color:var(--mut);margin-top:6px}
+  .media{margin:34px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:0 40px 90px -50px rgba(0,212,255,.5)}
+  .media img{display:block;width:100%}
+  .videowrap{position:relative;padding-top:56.25%;background:#000}
+  .videowrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  h2{font-size:1.5rem;margin:44px 0 6px;letter-spacing:-.3px}
+  .sub{color:var(--mut);margin:0 0 18px}
+  .grid{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+  .q{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--card)}
+  .q h3{margin:0 0 6px;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--cyan)}
+  .q p{margin:0;color:#e7e0ff;font-size:.98rem}
+  .shots{display:grid;gap:14px;grid-template-columns:1fr;margin-top:18px}
+  @media(min-width:720px){.shots{grid-template-columns:1fr 1fr 1fr}}
+  .shots figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+  .shots img{display:block;width:100%}
+  .shots figcaption{padding:10px 12px;font-size:.82rem;color:var(--mut)}
+  footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+  footer a{color:var(--cyan);text-decoration:none;font-weight:700}
+  .pill{display:inline-block;font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--cyan);border:1px solid rgba(0,212,255,.4);border-radius:999px;padding:4px 11px;background:rgba(0,212,255,.06)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand"><span class="dot">🚀</span> Launch<span class="grad">Copilot</span></div>
+
+  <h1>Paste your store link.<br><span class="grad">Get a graded launch kit.</span></h1>
+  <p class="lede">LaunchCopilot grades your App Store or Google Play listing against <strong>28 deterministic ASO rules</strong>, then generates a launch kit the <strong>same engine re-grades until it scores ≥ 90</strong> — store rewrites, Product Hunt, a 7-day social plan, community posts and press. Built for <strong>HackOnVibe · Business Success</strong>.</p>
+
+  <div class="cta">
+    <a class="btn primary" href="https://launchcopilot.edycu.dev" target="_blank" rel="noopener">🚀 Open the live app →</a>
+    <a class="btn ghost" href="https://youtu.be/2if0sEFKe8c" target="_blank" rel="noopener">🎬 Watch the demo</a>
+    <a class="btn ghost" href="https://launchcopilot.edycu.dev/pitch" target="_blank" rel="noopener">📊 Pitch deck</a>
+    <a class="btn ghost" href="https://github.com/edycutjong/launchcopilot" target="_blank" rel="noopener">💻 Source</a>
+  </div>
+  <p class="note">The full app is a Next.js SSR service — it runs live on Vercel at <a href="https://launchcopilot.edycu.dev" style="color:var(--cyan)">launchcopilot.edycu.dev</a> (Cloudflare Pages is static-only, so this page is the HackOnVibe showcase). Source in this repo &amp; at the link above.</p>
+
+  <div class="media"><div class="videowrap"><iframe src="https://www.youtube.com/embed/2if0sEFKe8c" title="LaunchCopilot demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+
+  <h2>See it in action</h2>
+  <p class="sub">~15-second walkthrough — paste → auto-fill → deterministic 27/100 grade → a launch kit that re-grades itself to ≥ 90.</p>
+  <div class="media"><img src="docs/demo.gif" alt="LaunchCopilot walkthrough"></div>
+  <div class="shots">
+    <figure><img src="docs/shot-autofill.png" alt="Paste a link, auto-fill"><figcaption>1 · Paste a link → auto-fill</figcaption></figure>
+    <figure><img src="docs/shot-grade.png" alt="Deterministic scorecard"><figcaption>2 · Deterministic 28-rule grade</figcaption></figure>
+    <figure><img src="docs/shot-landing.png" alt="Landing to live tool"><figcaption>3 · Landing → live tool</figcaption></figure>
+  </div>
+
+  <h2>Questionnaire <span class="pill">HackOnVibe</span></h2>
+  <p class="sub">The five required answers (also in this repo's <a href="https://github.com/HackOnVibeCom/2026-07-launchcopilot/blob/main/README.md" style="color:var(--cyan)">README</a>).</p>
+  <div class="grid">
+    <div class="q"><h3>What it does</h3><p>Grades a mobile app's store listing against 28 deterministic ASO rules (0–100, per-field fixes, no AI), then generates a validated launch kit — A/B store rewrites, Product Hunt draft, 7-day social calendar, community posts and press — each re-graded by the same engine until it scores ≥ 90.</p></div>
+    <div class="q"><h3>Target audience</h3><p>Solo &amp; indie mobile-app developers and small studios launching a new app who can't afford a $2–5k ASO/marketing agency.</p></div>
+    <div class="q"><h3>Expected buyer countries</h3><p>Global, English-first (v1): United States, United Kingdom, Canada, Australia, plus large indie-dev hubs — India, Germany/EU, Southeast Asia.</p></div>
+    <div class="q"><h3>Competitors</h3><p>ASO analytics suites (AppTweak, Sensor Tower, AppFollow, MobileAction) that report but don't rewrite; app-launch agencies (costly, slow); generic AI copywriters (ChatGPT/Jasper) with no store rules and no validation.</p></div>
+    <div class="q"><h3>Our advantage</h3><p>One deterministic 28-rule engine grades <strong>both</strong> the human and the AI — the rewrite must clear the same ≥ 90 bar or it regenerates, so the output is provably store-legal, not "AI slop." End-to-end (grade → full kit), free with no API key to grade, 100% reproducible.</p></div>
+  </div>
+
+  <footer>
+    <span>© 2026 LaunchCopilot · Edy Cu · MIT</span>
+    <a href="https://launchcopilot.edycu.dev" target="_blank" rel="noopener">Live app</a>
+    <a href="https://youtu.be/2if0sEFKe8c" target="_blank" rel="noopener">Demo video</a>
+    <a href="https://github.com/edycutjong/launchcopilot" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+</div>
+</body>
+</html>
